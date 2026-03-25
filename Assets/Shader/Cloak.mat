@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dissolve
-  m_Shader: {fileID: -6465566751694194690, guid: d7af0da280a3ed944a2520ba1e9c65e8, type: 3}
+  m_Name: Cloak
+  m_Shader: {fileID: -6465566751694194690, guid: 7e12e545825eca047970230d603dc60f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,10 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,14 +38,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amount: -0.11
+    - _CloakIntentsity: 0.5
+    - _DistortionStrength: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RimPower: 5
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 0.009499073, a: 1}
+    - _RimColor: {r: 0, g: 16, b: 13.388763, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &324890067044167228
+--- !u!114 &1968695303928877545
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
