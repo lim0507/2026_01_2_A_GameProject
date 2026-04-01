@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cloak
-  m_Shader: {fileID: -6465566751694194690, guid: 7e12e545825eca047970230d603dc60f, type: 3}
+  m_Name: Glass
+  m_Shader: {fileID: -6465566751694194690, guid: 368a2785ceb506e46a80f5dcc7ac27e0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,16 +38,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CloakIntentsity: 1
-    - _DistortionStrength: 0.1
+    - _Alpha: 0.5
+    - _FresnelPower: 1
+    - _Metallic: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimPower: 10
+    - _Smoothness: 0
     m_Colors:
-    - _RimColor: {r: 0, g: 16, b: 13.388763, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &1968695303928877545
+--- !u!114 &1144032414837442761
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
